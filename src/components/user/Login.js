@@ -27,7 +27,7 @@ const Login = () => {
       password: password,
     };
 
-    const loginUser = await fetch(`http://localhost:5000/auth/login`, {
+    const loginUser = await fetch(`https://notewave-backend.onrender.com/auth/login`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json", // Use "Content-Type" with a capital 'C'

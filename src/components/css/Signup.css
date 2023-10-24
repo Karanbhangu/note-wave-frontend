@@ -1,0 +1,71 @@
+/* Signup.css */
+
+.signup-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #f5f5b0, #b0b0f5);
+    background-size: 200% 200%;
+    animation: gradientAnimation 10s infinite alternate;
+  }
+  
+  .signup-form {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 40px; /* Increase padding to make the box bigger */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .signup-title {
+    font-size: 24px;
+    color: #073f8a;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .form-group {
+    margin: 10px 0;
+    text-align: left; /* Align labels to the left */
+  }
+  
+  .label {
+    font-weight: bold;
+  }
+  
+  .input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #073f8a;
+    border-radius: 5px;
+    margin-top: 5px;
+  }
+  
+  .signup-button {
+    background-color: #073f8a;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-top: 15px;
+  }
+  
+  .signup-button:hover {
+    background-color: #002f5a;
+  }
+  
+  @keyframes gradientAnimation {
+    0% {
+      background-position: 0% 0%;
+    }
+    100% {
+      background-position: 100% 100%;
+    }
+  }
+  .signup-button:disabled {
+    background-color: #ccc; /* Change the background color */
+    color: #999; /* Change the text color */
+    cursor: not-allowed; /* Change the cursor to indicate it's disabled */
+    /* You can add more styles as needed */
+  }

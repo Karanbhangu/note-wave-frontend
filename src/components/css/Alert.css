@@ -1,0 +1,80 @@
+.alert {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.alert.open {
+  display: flex;
+  animation: openAlert 0.3s;
+}
+@keyframes openAlert{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 100%;
+    }
+}
+
+.alert-box {
+  background: #fff;
+  width: 300px;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+.actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.alert-title {
+  font-size: 18px;
+  color: #333;
+}
+
+.close-icon {
+  cursor: pointer;
+  font-size: 16px;
+  color: #999;
+}
+
+.text {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.btns {
+  display: flex;
+  justify-content: center;
+}
+
+.btn {
+  padding: 10px 20px;
+  margin: 0 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  color: #fff;
+}
+
+.btn-yes {
+  background: #007bff;
+}
+
+.btn-no {
+  background: #dc3545;
+}

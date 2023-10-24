@@ -1,0 +1,143 @@
+/* Home.css */
+
+.home-container {
+    background: linear-gradient(135deg, #f5f5b0, #b0b0f5);
+    background-size: 200% 200%;
+    animation: gradientAnimation 10s infinite alternate;
+    height: 60vh; /* Adjust the height as needed */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  @keyframes gradientAnimation {
+    0% {
+      background-position: 0% 0%;
+    }
+    100% {
+      background-position: 100% 100%;
+    }
+  }
+  
+  .home-container a{
+    text-decoration: none;
+  }
+  .intro-section {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .app-heading {
+    font-size: 36px;
+    color: #073f8a; /* Dark blue color for headings */
+    margin-bottom: 20px;
+  }
+  
+  .action-buttons {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .login-button,
+  .signup-button {
+    background-color: #073f8a; /* Blue color for buttons */
+    color: #fff; /* White text color */
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    margin: 0 10px;
+    cursor: pointer;
+  }
+  
+  .login-button:hover,
+  .signup-button:hover {
+    background-color: #002f5a; /* Darker blue color on hover */
+  }
+  /* Home.css */
+/* Add this CSS to your Home.css */
+
+.features-section {
+  display: flex;
+  justify-content: space-around;
+  margin: 20px;
+  flex-wrap: wrap;
+}
+.head{
+  text-align: center;
+  margin-top: 20px;
+}
+.feature-card {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 20px;
+  text-align: center;
+  margin: 10px;
+  width: 300px; /* Adjust the width as needed */
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+  opacity: 0; /* Start with opacity 0 */
+  animation: fadeIn 1s ease-in-out forwards; /* Add a fade-in animation */
+  transition: all 0.2s;
+}
+.feature-card:hover{
+  transform: translateY(-3%);
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.feature-card i {
+  font-size: 36px;
+  color: #073f8a; /* Dark blue color for font awesome icons */
+}
+
+.app-tagline {
+  font-size: 18px;
+  color: #2e3238; /* Dark blue color for the text */
+  margin-top: 10px;
+}
+
+.feature-card h2 {
+  font-size: 24px;
+  color: #073f8a;
+  margin: 10px 0;
+}
+
+.feature-card p {
+  font-size: 18px;
+  color: #333;
+}
+
+/* Add these styles to Home.css */
+.technologies-section {
+  padding: 20px;
+  text-align: center;
+  background-color: #f9f9f9;
+}
+
+.tech-heading {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.tech-icons {
+  font-size: 36px;
+  color: #073f8a;
+  margin: 20px 0;
+}
+
+.tech-icons i {
+  margin: 0 10px;
+}
+
+.tech-description {
+  font-size: 18px;
+  color: #2e3238;
+  margin-top: 10px;
+}

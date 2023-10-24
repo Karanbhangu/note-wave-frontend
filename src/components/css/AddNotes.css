@@ -1,0 +1,118 @@
+.upper-portion{
+    padding: 0px 30px;
+}
+.note-nav{
+    margin-top: 20px;
+    background-color: #f9f9f9;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+}
+.fa-regular{
+    margin-left: 10px;
+    cursor: pointer;
+}
+.fa-moon{
+    display: none;
+}
+.note-nav button{
+    background-color: #0f52ba;
+  color: white; /* Text color */
+  padding: 5px 10px; /* Adjust padding as needed */
+  border: none;
+  border-radius: 4px; /* Rounded corners */
+  cursor: pointer;
+  transition: background-color 0.3s; 
+}
+.note-nav button:hover{
+    background-color: #073f8a;
+}
+.note-menu{
+    margin-top: 10px;
+    background-color: #f9f9f9;
+    height: 0px;
+    overflow: hidden;
+    transition: all 0.2s;
+}
+.note-menu.opens {
+    padding: 20px;
+    height: 450px;
+}
+
+/* Design */
+.note-menu form {
+    padding: 20px;
+    border-radius: 5px; /* Rounded corners */
+  }
+  
+  .note-menu h3 {
+    font-size: 25px;
+  }
+  
+  .input-box {
+    margin: 10px 0;
+  }
+  
+  .input-box label {
+    display: block;
+    font-weight: bold;
+  }
+  
+  .input-box input[type="text"] {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid black;
+    border-radius: 3px;
+    background-color: #fff; /* Light background for input fields */
+  }
+  
+  .note-menu button {
+    background-color: #073f8a; /* Slightly darker blue for the button */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .note-menu button:hover {
+    background-color: #0f52ba; /* Hover color change to the primary blue */
+  }
+  
+  /* Existing CSS styles */
+
+/* Adjust the input-box CSS for the textarea */
+.input-box textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid black;
+    border-radius: 3px;
+    background-color: #fff; /* Light background for textarea */
+    resize: vertical; /* Allow vertical resizing */
+    min-height: 100px; /* Set a minimum height for the textarea */
+  }
+  
+  /* Existing CSS styles */
+  
+  .input-box input[type="text"]:focus,
+  .input-box textarea:focus {
+    outline: none;
+    box-shadow: 0 0 1px black; /* Add a box-shadow with your desired color */
+  }
+
+  
+@media only screen and (max-width:460px){
+    .upper-portion{
+        padding: 10px;
+    }
+    .note-menu.opens{
+        padding: 8px;
+    }
+}
+.note-menu button:disabled {
+  background-color: #8ab7d4; /* Change to a lighter shade of blue when disabled */
+  cursor: not-allowed; /* Change cursor to not-allowed when disabled */
+  color: #666666; /* Change text color to dark gray when disabled */
+}

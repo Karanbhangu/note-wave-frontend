@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Roboto&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+body{
+  height: 100vh;
+}
+.notes-section {
+  overflow: hidden;
+  background: linear-gradient(135deg, #f5f5b0, #b0b0f5);
+  background-size: 200% 200%;
+  animation: gradientAnimation 10s infinite alternate;
+  min-height: 92vh;
+}
+
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 0%;
+  }
+  100% {
+    background-position: 100% 100%;
+  }
+}

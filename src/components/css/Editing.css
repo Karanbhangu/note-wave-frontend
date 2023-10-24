@@ -1,0 +1,110 @@
+/* Editing section */
+.edits {
+  display: none;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px 30px;
+  animation: closingAnimation 2s;
+}
+.edits.open {
+  display: flex;
+  animation: openingAnimation 2s;
+}
+@keyframes openingAnimation {
+  0% {
+    opacity: 0;
+    display: none;
+  }
+  100% {
+    opacity: 100%;
+    display: flex;
+  }
+}
+.edit-note-form {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+.edit-note-form h2 {
+  color: #000;
+  text-align: center;
+}
+
+.form-group {
+  margin-bottom: 10px;
+}
+.edit-note-form h2 i {
+  cursor: pointer;
+}
+.edit-note-form h2 i:hover {
+  color: rgb(56, 56, 133);
+}
+
+.form-group label {
+  display: block;
+  font-weight: bold;
+  color: #000;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+
+.button-group {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.button-group button {
+  background-color: #004b8d;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.button-group button:hover {
+  background-color: #002f5a;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  outline: none;
+}
+.edit-nav{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 10px;
+  margin-bottom: 20px;
+}
+.edit-handle {
+  background-color: #004b8d; /* Blue color */
+  color: #fff; /* White text color */
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+/* Hover effect */
+.edit-handle:hover {
+  background-color: #0056b3; /* Darker blue color on hover */
+}
+.button-group button:disabled {
+  background-color: #cccccc; /* Light gray for the disabled button */
+  cursor: not-allowed; /* Change cursor to not-allowed when disabled */
+  color: #888888; /* Light gray text color for disabled */
+}
+

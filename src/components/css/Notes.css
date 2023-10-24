@@ -1,0 +1,115 @@
+/* CSS for the Notes Component */
+.notes {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px 30px;
+  animation: openingAnimation 1s;
+}
+
+.notes.open {
+  display: none;
+}
+@keyframes openingAnimation {
+  0% {
+    opacity: 0;
+    display: none;
+  }
+  100% {
+    opacity: 100%;
+    display: flex;
+  }
+}
+
+.note {
+  background-color: #f9f9f9; /* Light gray background */
+  color: #333; /* Dark text color */
+  border-radius: 10px;
+  padding: 20px;
+  width: 280px; /* Adjust the width as needed */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Add a subtle box-shadow */
+  transition: background-color 0.3s; /* Smooth background color transition */
+  margin-top: 10px;
+  height: 200px;
+}
+
+.noteTitle {
+  font-size: 20px;
+  margin: 0;
+  height: 20%;
+}
+
+.noteDescription {
+  font-size: 16px;
+  height: 40%;
+  margin-top: 5px;
+}
+
+/* Additional styles for the created date */
+.note p {
+  font-size: 14px;
+}
+.hashtag {
+  color: grey;
+  font-style: italic;
+  height: 20%;
+}
+/* Hover effect for the notes card */
+.note:hover {
+  background-color: #f0f0f0; /* Light gray with a subtle tint of blue on hover */
+}
+.icons {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.icon i {
+  cursor: pointer;
+  margin: 0px 5px;
+}
+.icon i:hover {
+  color: #073f8a;
+}
+
+@media only screen and (max-width: 645px) {
+  .note {
+    width: 250px;
+    height: 200px;
+  }
+  .noteTitle {
+    height: 37%;
+    margin-bottom: 5px;
+  }
+  .noteDescription {
+    height: 35%;
+  }
+}
+@media only screen and (max-width: 580px) {
+  .note {
+    width: 220px;
+    height: 250px;
+  }
+  .noteTitle {
+    height: 26%;
+  }
+  .noteDescription {
+    height: 30%;
+  }
+}
+@media only screen and (max-width: 510px) {
+  .note {
+    width: 300px;
+    height: 200px;
+  }
+  .noteTitle {
+    height: 20%;
+  }
+  .noteDescription {
+    height: 35%;
+  }
+}
+.no-notes {
+  font-size: x-large;
+}

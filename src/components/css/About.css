@@ -1,0 +1,49 @@
+/* About.css */
+
+.about-page {
+  padding: 20px;
+  margin: 0 auto;
+  text-align: left;
+  font-size: 18px;
+  background: #fffff3;
+  background-size: 200% 200%;
+  animation: gradientAnimation 10s infinite alternate;
+}
+
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 0%;
+  }
+  100% {
+    background-position: 100% 100%;
+  }
+}
+
+.about-title {
+  font-size: 24px;
+  color: #073f8a; /* Dark blue color for headings */
+}
+
+.about-subtitle {
+  font-size: 20px;
+  color: #073f8a;
+}
+
+.about-description {
+  margin-bottom: 15px;
+}
+
+.about-list {
+  list-style: disc;
+  margin-left: 20px;
+  margin-bottom: 15px;
+}
+
+.about-link a {
+  color: #0f52ba; /* Link color */
+  text-decoration: none;
+}
+
+.about-link a:hover {
+  text-decoration: underline;
+}

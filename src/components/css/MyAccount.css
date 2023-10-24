@@ -1,0 +1,82 @@
+/* MyAccount.css */
+
+.my-account-container {
+    background: linear-gradient(135deg, #f5f5b0, #b0b0f5);
+    background-size: 200% 200%;
+    animation: gradientAnimation 10s infinite alternate;
+    padding: 20px;
+    margin: 0 auto;
+    text-align: left;
+    height: 92vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  @keyframes gradientAnimation {
+    0% {
+      background-position: 0% 0%;
+    }
+    100% {
+      background-position: 100% 100%;
+    }
+  }
+  
+  .account-heading {
+    font-size: 24px;
+    color: #073f8a;
+  }
+  
+  .account-card {
+    background-color: #fff; /* White background for the card */
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 40px;
+    text-align: left;
+    margin: 0 auto;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+  }
+  
+  .card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .edit-button {
+    background: none;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    color: #073f8a;
+  }
+  
+  .input {
+    width: 100%;
+    padding: 10px;
+    font-size: 18px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .update-button {
+    background-color: #073f8a;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    margin-top: 20px;
+    cursor: pointer;
+  }
+  
+  .update-button:hover {
+    background-color: #002f5a;
+  }
+  .update-button:disabled {
+    background-color: #ccc; /* Change the background color */
+    color: #999; /* Change the text color */
+    cursor: not-allowed; /* Change the cursor to indicate it's disabled */
+    /* You can add more styles as needed */
+  }
+  
+  

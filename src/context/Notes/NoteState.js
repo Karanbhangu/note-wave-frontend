@@ -3,7 +3,7 @@ import { useState } from "react";
 import { toast } from "react-toastify";
 
 const NoteState = (props) => {
-  const host = process.env.REACT_APP_HOST ; // Use environment variables for configuration
+  const host = "https://notewave-backend.onrender.com" ; // Use environment variables for configuration
   const [notes, setNotes] = useState([]);
   const [user, setUser] = useState([]);
   const notify = (message) => {

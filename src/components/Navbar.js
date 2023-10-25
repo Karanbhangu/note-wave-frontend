@@ -76,9 +76,9 @@ export default function Navbar(props) {
             <Link onClick={closeMenu} to="/notes" className={location.pathname === "/notes"? "active" :"" }>Notes</Link>
           </li>
           <li>
-            {findJwt? <Link onClick={closeMenu} to="/myaccount" className={location.pathname === "/myaccount"? "active": ""} /> : <Link onClick={closeMenu} to="/login" className={location.pathname === "/login"? "active" :"" }>Login</Link>
-}
-          </li>
+              {findJwt? <Link onClick={closeMenu} to="/myaccount" >My Account</Link> :              <Link to="/login" onClick={closeMenu} className={location.pathname === "/login"? "active" :"" }>Login</Link>
+ }
+            </li>
         </ul>
       </div>
     </>
